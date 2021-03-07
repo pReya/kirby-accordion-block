@@ -1,0 +1,12 @@
+.k-block-type-accordion {
+  margin-bottom: 2rem;
+}
+
+.k-block-type-accordion summary {
+  font-family: "Raleway", sans-serif;
+  border-bottom: 4px solid #12b27f;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}

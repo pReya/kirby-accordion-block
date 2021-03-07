@@ -1,0 +1,37 @@
+.k-block-type-accordion {
+  margin-bottom: 2rem;
+}
+
+.k-block-type-accordion summary {
+  font-family: "Raleway", sans-serif;
+  border-bottom: 4px solid var(--highlight-green);
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.k-block-type-accordion summary::marker, .k-block-type-accordion summary::-webkit-details-marker {
+  color: transparent;
+}
+
+.k-block-type-accordion[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0}
+  100%  {opacity: 1}
+}
+
+.k-block-type-accordion summary::before {
+  content: url("chevron-right.svg");
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.k-block-type-accordion[open] summary::before {
+  transform: rotate(90deg);
+}
+

@@ -1,0 +1,16 @@
+name: Accordion
+icon: angle-down
+fields:
+  toggle:
+    label: Open on load?
+    type: toggle
+    text:
+      - "No"
+      - "Yes"
+  summary:
+    type: text
+    placeholder: Add title here
+  details:
+    type: writer
+    placeholder: Add hidden text here
+    required: true
